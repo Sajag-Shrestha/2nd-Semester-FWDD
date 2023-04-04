@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;  
+ }
+
+.logo{
+    width: 24.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a img{
+    width: 80px;
+    height: 78px;
+    border: 1px solid white;
+    border-radius: 50px;
+
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgba( 0, 0, 0, 0.7);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    z-index: 4;
+}
+
+.nav-list {
+    width: 80%;
+    display: flex;   
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 38px 42px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    padding: 13px;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    transition: all 0.4s ease-out;
+}
+
+
+#active {
+    color: white;
+    background-color: #008B5E;
+    border-radius: 15px;
+    transition: all 0.38s ease-in;
+}
+
+.searchNav{
+    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 20px;
+    border: 3px solid darkslategray;
+    border-radius: 10px;
+}
+
+.background{
+    background: rgba(47, 79, 79, 0.5) url('../images/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.left{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right img{
+    width: 205px;
+    height: 205px;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 60px;
+}
+
+.text-small{
+    font-size: 25px;
+}
+
+.btn{
+    border: 2px solid white;
+    padding: 9px 16px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn:hover{
+    border: 2px solid black;
+    padding: 9px 16px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: inherit;
+    color: white;
+    background-color: #008B5E;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.sml-btn{
+    margin: 3px;
+    padding: 4px 7px;
+    font-size: 17px;
+}
+
+.sml-btn:hover{
+    margin: 3px;
+    padding: 4px 7px;
+    font-size: 17px;
+}
+
+#food{
+    margin: auto;
+    display: flex;
+    padding: 100px;  
+}
+
+#food .box{ 
+    max-width: 350px;
+    height: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+#food .box:hover > .image{
+    width: 380px;
+    height: 380px;
+    border:6px solid black;
+    transition: all 0.4s ease-out;
+    z-index: 3;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    border: 4px solid #008B5E;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 112%;
+    height: 112%;
+    background: rgba( 0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0;
+    z-index: 3;
+}
+
+#food .box:hover > .overlay{
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.title{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.caption{
+    color: white;
+    font-size: 15px;
+    margin: 0.5em;
+}
+
+a{
+    text-decoration: unset;
+    color: lightgray;
+}
+
+.h1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200;
+    font-family: 'Ubuntu', sans-serif;
+    color:#008B5E;
+    padding-bottom: 0%;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5px;
+}
+
+.break{
+    width: 80%;
+    background-color: #008B5E;
+    border-radius: 5px;
+}
+
+.hr{
+    display: flex;
+    width: 100%;
+}
+
+.hr-line{
+    width: 28%;
+    background-color: #008B5E;
+    border-radius: 10px;
+}
+
+.foot{
+    width: 50%;
+    height: 2.6px;
+    border-radius: 5px;
+    padding: 10px 26px;
+}
+
+
+.h-foot{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding: 6px 0px;
+}
+
+.d-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 2px 0px;
+}
+
+.abt{
+    padding: 9px 0px;
+}
+
+.f-list{
+    text-decoration: none;
+    list-style-type: none;
+    color: lightgray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.f-list li{
+    margin: 5px 0px;
+}
+
+.nav-list li{
+    margin: 0px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-line {
+    background: black;
+    color: lightgray;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 8px 0px;
+  }
+
+.option{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.lines{
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    margin: 5px 5px;
+}
+
+.f-background{
+    background-color: #000d1a;
+    height: 170px;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    color: lightgray;
+    padding: 8px 0px 26px 46px;
+}
+
+.icons{
+    display: flex;
+    list-style-type: none;
+}
+
+.socio-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    padding: 7px 7px 5px 7px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.socio-icons:hover{
+    background-color: #008B5E;
+    transition: all 0.4s ease-out;
+}
+
+.socio-icons img{
+    width: 20px;
+    height: 20px;
+}
+
+#logo-fix{
+    margin-left: -1px;
+}

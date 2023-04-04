@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1330px){
+    #food{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 10%;
+    }
+    .overlay{
+        width: 105%;
+        height: 105%;
+    }
+    #food .box:hover > .image{
+        width: 102%;
+        height: 102%;
+    }
+    #food .box{
+        margin-bottom: 14%;
+    }
+}   

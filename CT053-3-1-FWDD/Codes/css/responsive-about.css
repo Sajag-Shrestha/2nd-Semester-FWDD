@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1325px){
+    #screen{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        text-align: center;
+    }
+    .cover{
+        left: 18.69%;
+        top: 5.2%;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .caption{
+        font-size: 10px;
+    }
+}    
